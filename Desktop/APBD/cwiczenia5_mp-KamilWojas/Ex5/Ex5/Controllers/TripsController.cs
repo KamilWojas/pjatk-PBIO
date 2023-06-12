@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Ex5.Controllers
 
-
 {
     [Route("api/trips")]
     [ApiController]
@@ -15,6 +14,7 @@ namespace Ex5.Controllers
         {
             _tripsService = tripsService;
         }
+
 
         [HttpGet]
         public async Task<IActionResult> GetTrips()
